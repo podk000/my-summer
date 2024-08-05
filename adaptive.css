@@ -1,0 +1,114 @@
+@media screen and (max-width: 1250px) {
+    main .main-block.first {
+        display: none;
+    }
+
+    .map-info {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .map .container {
+        display: block;
+    }
+
+    .galery .container,
+    .second-galery .container {
+        display: grid
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .map-block {
+        display: none;
+    }
+
+    .galery,
+    .second-galery {
+        padding-bottom: 40px;
+    }
+
+    .map-title {
+        padding-bottom: 40px;
+    }
+
+    h1,
+    h2 {
+        font-size: 35px;
+    }
+
+    main .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .main {
+        overflow: hidden;
+        padding-bottom: 200px;
+    }
+
+    .main-block {
+        z-index: -2;
+    }
+
+    .main-block.second {
+        z-index: -1;
+    }
+
+    .map-desc {
+        font-size: 20px;
+    }
+
+    .map-info {
+        padding-bottom: 40px;
+    }
+
+    .map {
+        padding: 60px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .galery .container,
+    .second-galery .container {
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(2, 200px);
+        grid-template-areas:
+            "p3 p3"
+            "p1 p2";
+    }
+
+    .map-info.right .map-title {
+        justify-content: flex-start;
+    }
+
+    .main {
+        padding: 80px 0 130px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .galery .container,
+    .second-galery .container {
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(2, 200px);
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .galery .container,
+    .second-galery .container {
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 150px);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .map-info {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}

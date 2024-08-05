@@ -1,0 +1,265 @@
+@font-face {
+    font-family: Blogger;
+    src: url("fonts/Blogger.otf");
+}
+
+@font-face {
+    font-family: Euro;
+    src: url("fonts/eurof55.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Euro, sans-serif;
+    color: #000879;
+    background-color: rgba(243, 197, 187, 0.2);
+}
+
+h1,
+h2 {
+    font-family: Blogger, sans-serif;
+    font-size: 55px;
+}
+
+svg {
+    width: 50px;
+    height: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main {
+    padding: 210px 0 420px;
+    position: relative;
+}
+
+h1 {
+    max-width: 846px;
+    text-align: right;
+    font-size: 55px;
+}
+
+.main .container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-block {
+    box-shadow: 2px 2px 2px rgba(0 0 0 / 0.2);
+    position: absolute;
+}
+
+.main-block.first {
+    width: 264px;
+    height: 235px;
+    background-color: #69c678;
+    bottom: 264px;
+    left: 424px;
+    z-index: 100;
+    /* position: absolute; */
+}
+
+.main-block.second {
+    width: 509px;
+    height: 278px;
+    background-color: #eee272;
+    bottom: 50px;
+    left: 261px;
+    z-index: 50;
+}
+
+.main-block.third {
+    width: 508px;
+    height: 221px;
+    background-color: #da6262;
+    bottom: 192px;
+    left: 75px;
+}
+
+.map {
+    padding: 164px 0;
+    position: relative;
+}
+
+.map-info.right {
+    text-align: right;
+}
+
+.map-title {
+    padding-bottom: 70px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.map-info {
+    padding-bottom: 100px;
+}
+
+.map-info.right .map-title {
+    justify-content: flex-end;
+}
+
+.map-info {
+    max-width: 846px;
+}
+
+.map .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "mi1 mi1 ."
+        ". mi2 mi2"
+        "mi3 mi3 ."
+        ". mi4 mi4";
+}
+
+.map-info:first-child {
+    grid-area: mi1;
+}
+
+.map-info:nth-child(2) {
+    grid-area: mi2;
+}
+
+.map-info:nth-child(3) {
+    grid-area: mi3;
+}
+
+.map-info:last-child {
+    grid-area: mi4;
+}
+
+.map-desc {
+    font-size: 25px;
+}
+
+.map-block {
+    background-color: #565454;
+    position: absolute;
+    box-shadow: 2px 2px 2px rgba(0 0 0 / 0.2);
+    z-index: -1;
+}
+
+.map-block.first {
+    width: 339px;
+    height: 338px;
+    left: 89px;
+    top: 666px;
+    background-color: #DA6262;
+}
+
+.map-block.second {
+    width: 562px;
+    height: 496px;
+    left: 349px;
+    top: calc(448px + 80px);
+    background-color: #eee272;
+}
+
+.map-block.third {
+    width: 359px;
+    height: 338px;
+    right: 418px;
+    top: calc(448px + 482px);
+    background-color: #69c678;
+}
+
+.map-block.fourth {
+    width: 359px;
+    height: 338px;
+    right: 481px;
+    bottom: 818px;
+    background-color: #DA6262;
+}
+
+.map-block.fifth {
+    width: 675px;
+    height: 450px;
+    bottom: 580px;
+    left: 510px;
+    background-color: #eee272;
+}
+
+.map-block.sixth {
+    width: 500px;
+    height: 400px;
+    left: 260px;
+    bottom: 403px;
+    background-color: #69c678;
+}
+
+.galery,
+.second-galery {
+    padding-bottom: 78px;
+}
+
+.galery .container,
+.second-galery .container {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 30px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "p1 p3 p3"
+        "p2 p3 p3";
+}
+
+.p3 {
+    grid-area: p3;
+    background-color: #5771ff;
+}
+
+.p1 {
+    grid-area: p1;
+    background-color: #ff5757;
+}
+
+.p2 {
+    grid-area: p2;
+    background-color: #87ff57;
+}
+
+.p1,
+.p2,
+.p3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.galery .p1 {
+    background-image: url("img/p1.png");
+}
+
+.galery .p2 {
+    background-image: url("img/p2.png");
+}
+
+.galery .p3 {
+    background-image: url("img/p3.png");
+}
+
+.second-galery .p1 {
+    background-image: url("img/p4.png");
+}
+
+.second-galery .p2 {
+    background-image: url("img/p5.png");
+}
+
+.second-galery .p3 {
+    background-image: url("img/p6.png");
+}
